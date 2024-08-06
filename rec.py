@@ -40,5 +40,18 @@ def factorial(a):
 print(factorial(5))
 
 
+#wap a recursive func  to print all elemsnts in list.
+
+def print_list(list,indx):
+    if indx==len(list):
+        return
+    print(list[indx])
+    print_list(list,indx+1)
+    
+print_list([1,2,3,4,5],0)
+fruits=["apple","banana","cherry","orange"]
+print_list(fruits,0)
+
+
 
 
